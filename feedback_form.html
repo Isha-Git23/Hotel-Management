@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="feedback_form.css">
+
+</head>
+
+<body>
+    <h2>Feedback Form</h2>
+    <form action="thanksp.php" method="post">
+        <div class="feedback">
+            <!-- <label id="name" for="name">name:</label>
+            <input type="text" name="name" id="name" required> -->
+<div>
+            <label id="rating" name="rating" for="rating">rating:
+            <div id="rating">
+               
+                <span class="star" data-rating="1">&#9733;</span>
+                <span class="star" data-rating="2">&#9733;</span>
+                <span class="star" data-rating="3">&#9733;</span>
+                <span class="star" data-rating="4">&#9733;</span>
+                <span class="star" data-rating="5">&#9733;</span>
+            </div></label>
+</div>
+            <label id="comment" for="comment">comment:
+            <textarea id="comment" name="comment" placeholder="Leave a comment"></textarea></label>
+            <button id="submit-feedback">Submit</button>
+        </div>
+        <div id="confirmation" style="display:none;">Thank you for your feedback!</div>
+        <script src="feedback_form.js"></script>
+    </form>
+</body>
+
+
+
+</html>

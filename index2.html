@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+</head>
+<body>
+    <button id="bookButton">Book Now</button>
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Book a Table</h2>
+            <form id="bookingForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required><br>
+                <button type="submit">Submit</button>
+                <!-- Add this div for success message -->
+
+
+            </form>
+
+            <div id="successMessage" display="none">
+                <p>Booking successful! Thank you for choosing our restaurant.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
